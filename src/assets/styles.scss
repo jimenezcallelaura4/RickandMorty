@@ -1,0 +1,89 @@
+// Variables
+$secondary-color: #a0ff3b; //titulos
+$text-color: #000000;
+$bg-color: #262c3a;
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    gap: 2rem; // imagaen - texto
+}
+
+
+.home-text {
+    text-align: left;
+    order: -1; // pone txt a la izquierda
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #a0ff3b;
+}
+
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+a {
+    color: #83b44f;
+    text-decoration: none;
+}
+
+
+.episodes-list, .characters-list {
+    display: grid;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+
+.episode-card, .character-card {
+    background: $secondary-color;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    color: $text-color;
+    
+
+
+    h3 {
+        margin: 0.5em 0;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    &:hover {
+        transform: translateY(-5px); //mueve
+    }
+}
+
+.character-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
